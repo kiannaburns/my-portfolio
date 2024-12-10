@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 2;
+  color: #000000;
+  background-color: lightgrey;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #c69dd8;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header img {
+  width: 150px;
+  height: auto;
+}
+header nav {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  text-align: right;
+}
+header nav a {
+  text-decoration: none;
+  color: rgb(58, 21, 98);
+  font-weight: bold;
+  transition: color 0.3s ease;
+  align-items: center;
+  text-align: right;
+}
+header nav a:hover {
+  color: #ccc;
+}
+main {
+  padding: 20px;
+}
+section {
+  margin-bottom: 40px;
+}
+
+#about img.headshot {
+  max-width: 150px;
+  border-radius: 50%;
+  margin: 20px 0;
+  align-content: center;
+}
+
+#skills ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+#projects table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+#projects table th,
+#projects table td {
+  border: 5px solid rgb(58, 21, 98);
+  padding: 10px;
+  text-align: left;
+}
+
+#contact iframe {
+  margin: 20px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input,
+form textarea,
+form button {
+  padding: 10px;
+  border: 1px solid rgb(58, 21, 98);
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #c69dd8;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+  }
+}
